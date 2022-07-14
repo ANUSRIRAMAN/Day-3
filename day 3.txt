@@ -1,0 +1,116 @@
+1.For the given JSON iterate overall for loops(for ,for in)
+
+//for loop
+var json=[
+{
+"name": "marc marquez alenta",
+"age":"29",
+"nationality":"spain",
+
+"occupation":"bikeracer",
+"raceteam":"honda",
+"racenumber":"93"
+}
+]
+for( var i=0;i<json.length;i++)
+{
+console.log(json[i]);
+}
+
+
+//for in loop
+    var json={
+    "name": "marc marquez alenta",
+    "age":"29",
+    "nationality":"spain",
+    "occupation":"bikeracer",
+    "raceteam":"honda",
+    "racenumber":"93"
+    }
+    for(var i in json)
+    {
+    console.log(i,json[i]);
+    }
+
+
+
+
+2.Create your own resume data in json format;
+var resume=
+{
+
+"Name": "Anusriraman R",
+"DOB":"12.06.1998",
+"Age":"24",
+"Blood Group":"o+ve",
+"qualification":"B.E Mechanical Engineering",
+"CGPA":"7.7",
+"College":"Sri Venkateswara College of Engineering Sriperumbudur",
+"Education details":":",
+"class 10th":"Bharath montessori matric hr.sec school tenkasi",
+"class 10th percentage":"94",
+"class 12th":"Bharath montessori matric hr.sec school tenkasi",
+"class 12th percentage":"81",
+"Skills":"full stack development",
+"project":"Experimental investigation on alloy wear tribology",
+
+"workshop":"Yellow belt training for quality check completed in TVS (5days workshop)",
+"Workshop":"Ultrasonic Machining processing of composite materials",
+"Language":"Tamil,English",
+
+
+}
+for(var key in resume)
+{
+console.log(key,resume[key]);
+}
+
+
+3.Difference between windows screen and documents
+WINDOW
+The JavaScript window object represents the browser window.
+The window is the first thing that gets loaded into the browser and supported by all browsers.
+The window object represents the current browsing context.
+
+EXAMPLES:
+window.open() : open a new window
+
+window.close() : close the current window
+
+window.moveTo() : move the current window
+
+window.resizeTo() : resize the current window
+
+
+DOCUMENTS:
+The Document object represents any web page loaded in the browser and serves as an entry point into the web page’s content, 
+which is the DOM tree. When an HTML document is loaded into a web browser , it becomes a document object. 
+It is the root node of the HTML document.
+The document actually gets loaded inside the window object and has properties available to it like title, URL, cookie, etc.
+
+
+EXAMPLES:
+document.createElement(element) : Create an HTML element
+
+document.removeChild(element) : Remove an HTML element
+
+document.appendChild(element) : Add an HTML element
+
+document.replaceChild(new, old) : Replace an HTML element
+
+
+SCREEN
+
+Screen is a small information object about physical screen dimensions of the user device.
+It can be used to display screen width, height, colorDepth, pixelDepth etc. 
+It is not mandatory to write window prefix with screen object like window.screen. 
+It can be written without window prefix.
+
+
+EXAMPLES
+screen.width
+screen.height
+screen.availWidth
+screen.availHeight
+screen.colorDepth
+screen.pixelDepth
